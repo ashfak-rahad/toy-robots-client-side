@@ -1,6 +1,7 @@
 import React from 'react';
 import logo from "../asset/login.jpg";
 import { AiFillGoogleCircle } from 'react-icons/ai';
+import { Link } from 'react-router-dom';
 
 const Login = () => {
     return (
@@ -32,7 +33,7 @@ const Login = () => {
                 <p className='mt-5 text-xs border-b py-6'>Forgot your password?</p>
                 <div className=' mt-3 text-sm flex justify-between items-center'>
                     <p>It you don't have an account?</p>
-                    <button className='py-2 px-5 bg-white border rounded-xl'>Register</button>
+                    <Link to="/sign" className='py-2 px-5 bg-white border rounded-xl'>Register</Link>
                 </div>
 
             </div>

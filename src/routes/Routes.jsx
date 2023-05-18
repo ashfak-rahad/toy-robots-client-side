@@ -5,6 +5,7 @@ import Login from "../pages/Login";
 import Blog from "../pages/Blog";
 import AllToys from "../pages/AllToys";
 import AddToy from "../pages/AddToy";
+import Registration from "../pages/Registration";
 
 const Routes = createBrowserRouter([
     {
@@ -30,6 +31,10 @@ const Routes = createBrowserRouter([
             {
                 path: "/add",
                 element: <AddToy/>
+            },
+            {
+                path: "/sign",
+                element: <Registration/>
             }
            
         ]
