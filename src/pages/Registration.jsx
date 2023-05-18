@@ -2,9 +2,9 @@ import React from 'react';
 import logo from "../asset/login.jpg";
 import { AiFillGoogleCircle } from 'react-icons/ai';
 
-const Login = () => {
+const Registration = () => {
     return (
-       <section className='bg-gray-50 min-h-screen flex items-center justify-center'>
+        <section className='bg-gray-50 min-h-screen flex items-center justify-center'>
          {/* login container */}
          <div className='bg-gray-100 flex rounded-2xl shadow-lg max-w-3xl p-5'>
             {/* form */}
@@ -46,4 +46,4 @@ const Login = () => {
     );
 };
 
-export default Login;
+export default Registration;
