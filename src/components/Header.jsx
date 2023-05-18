@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai';
 import { NavLink } from 'react-router-dom';
+import logo from '../asset/robot.png'
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
@@ -11,7 +12,12 @@ const Navbar = () => {
 
   return (
     <div className='flex justify-between items-center h-24 max-w-[1240px] mx-auto px-4 text-black'>
-      <h1 className='w-full text-3xl font-bold text-[#141515]'>Toy Robots</h1>
+      <div className='w-64 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left'>
+                <p className='flex title-font font-medium item-center md:justify-start justify-center text-gray-900'>
+               <img className='w-9 mr-2' src={logo} alt="" />
+               <span className='text-sm font-semibold text-black'>Toy <br /> Robots</span>
+                </p>
+              </div>
       <ul className='hidden md:flex gap-8'>
       <li className='p-4'>
           <NavLink to="/" className={({ isActive }) => isActive ? "active" : ""}>
