@@ -3,7 +3,8 @@ import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 import { NavLink } from "react-router-dom";
 import logo from "../asset/robot.png";
 
-const Navbar = () => {
+
+const Header = () => {
   const [nav, setNav] = useState(false);
 
   const handleNav = () => {
@@ -123,4 +124,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+export default Header;
