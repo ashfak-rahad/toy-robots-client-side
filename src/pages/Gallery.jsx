@@ -58,7 +58,7 @@ const Gallery = () => {
           <img src="https://images.pexels.com/photos/7869037/pexels-photo-7869037.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="slide_image" />
         </SwiperSlide>
 
-        <div className="slider-controler ">
+        <div className="slider-controler  ">
           <div className="swiper-button-prev slider-arrow">
             <ion-icon name="arrow-back-outline"></ion-icon>
           </div>

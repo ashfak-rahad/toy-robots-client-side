@@ -3,6 +3,7 @@ import { BsChevronCompactLeft, BsChevronCompactRight } from "react-icons/bs";
 import { RxDotFilled } from "react-icons/rx";
 import Gallery from "./Gallery";
 import PopularRobot from "./PopularRobot";
+import FighterRobot from "./FighterRobot";
 
 const Home = () => {
   const slides = [
@@ -80,6 +81,7 @@ const Home = () => {
       <section>
         <Gallery></Gallery>
         <PopularRobot/>
+        <FighterRobot/>
       </section>
     </>
   );
