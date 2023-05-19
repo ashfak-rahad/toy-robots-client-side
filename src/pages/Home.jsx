@@ -82,8 +82,9 @@ const Home = () => {
       <section>
         <Gallery></Gallery>
         <Product/>
-        <PopularRobot/>
+        
         <FighterRobot/>
+        <PopularRobot/>
       </section>
     </>
   );

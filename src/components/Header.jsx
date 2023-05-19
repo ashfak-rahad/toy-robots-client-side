@@ -22,11 +22,11 @@ const Header = () => {
   };
 
   return (
-    <div className="flex justify-between items-center h-24 max-w-[1240px] mx-auto px-4 text-black">
+    <div className="flex justify-between items-center h-20 max-w-[1240px] bg-neutral-800 mx-auto font-bold text-white">
       <div className="w-64 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left">
         <p className="flex title-font font-medium item-center md:justify-start justify-center text-gray-900">
           <img className="w-9 mr-2" src={logo} alt="" />
-          <span className="text-sm font-semibold text-black">
+          <span className="text-sm font-semibold text-white">
             Toy <br /> Robots
           </span>
         </p>
@@ -78,7 +78,7 @@ const Header = () => {
                   </div>
                 </label>
                 <button
-                  className="border rounded-2xl py-2 px-6  shadow-xl  bg-blue-800 text-white"
+                  className="border rounded py-2 px-9  shadow-xl  bg-blue-800 text-white"
                   onClick={ handleGoogleSignOut}
                 >
                   Sign Out
@@ -89,7 +89,7 @@ const Header = () => {
             <>
               <NavLink
                 to="/login"
-                className="border rounded-2xl py-2 px-6  shadow-xl border-black bg-blue-800 text-white"
+                className="border rounded-2xl py-2 px-6  shadow-xl"
               >
                 Login
               </NavLink>

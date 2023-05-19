@@ -7,6 +7,7 @@ import AllToys from "../pages/AllToys";
 import AddToy from "../pages/AddToy";
 import Registration from "../pages/Registration";
 import PageError from "../pages/PageError";
+import AboutUs from "../components/AboutUs";
 
 const Routes = createBrowserRouter([
     {
@@ -37,6 +38,10 @@ const Routes = createBrowserRouter([
             {
                 path: "/sign",
                 element: <Registration/>
+            },
+            {
+                path: "/about",
+                element: <AboutUs/>
             }
            
         ]

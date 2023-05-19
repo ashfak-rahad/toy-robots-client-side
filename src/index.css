@@ -8,7 +8,7 @@
     }
   }
 .active {
-    @apply rounded text-[#161918] font-bold
+    @apply rounded text-red-400 font-bold
   }
 
  
