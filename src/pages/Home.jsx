@@ -4,6 +4,7 @@ import { RxDotFilled } from "react-icons/rx";
 import Gallery from "./Gallery";
 import PopularRobot from "./PopularRobot";
 import FighterRobot from "./FighterRobot";
+import Product from "./Product";
 
 const Home = () => {
   const slides = [
@@ -80,6 +81,7 @@ const Home = () => {
       </div>
       <section>
         <Gallery></Gallery>
+        <Product/>
         <PopularRobot/>
         <FighterRobot/>
       </section>
