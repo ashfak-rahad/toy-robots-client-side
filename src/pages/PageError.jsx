@@ -7,7 +7,8 @@ const PageError = () => {
       <div id="error-page">
         
         <div>
-            <img className="md:w-1/2 px-3 mx-auto " src="https://img.freepik.com/premium-vector/cartoon-robot-with-broken-toy-with-number-404-it_9206-9070.jpg?w=360" alt="" />
+            <h1 className='text-3xl text-center font-bold'>404</h1>
+            <img className="md:w-1/2 px-3 mx-auto " src="https://images.pexels.com/photos/2599244/pexels-photo-2599244.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="" />
         </div>
         
         

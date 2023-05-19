@@ -2,7 +2,7 @@ import { useState } from "react";
 import { BsChevronCompactLeft, BsChevronCompactRight } from "react-icons/bs";
 import { RxDotFilled } from "react-icons/rx";
 import Gallery from "./Gallery";
-
+import PopularRobot from "./PopularRobot";
 
 const Home = () => {
   const slides = [
@@ -44,6 +44,15 @@ const Home = () => {
     // banner
     <>
       <div className="max-w-[1400px] h-[780px] w-full m-auto py-16 px-4 relative group">
+        <div className="absolute w-full h-full text-center text-gray-200 max-h-[650px] rounded-2xl bg-black/40 flex flex-col justify-center">
+          <h1 className="px-4 text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold">
+            Kids<span className="text-indigo-400"> Popular</span>
+          </h1>
+          <h1 className="px-4 text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold">
+            {" "}
+            <span className="text-indigo-600"> Toys</span> Robot 2.0
+          </h1>
+        </div>
         <div
           style={{ backgroundImage: `url(${slides[currentIndex].url})` }}
           className="w-full h-full rounded-2xl bg-center bg-cover duration-500"
@@ -68,11 +77,11 @@ const Home = () => {
           ))}
         </div>
       </div>
-     <section>
+      <section>
         <Gallery></Gallery>
-     </section>
+        <PopularRobot/>
+      </section>
     </>
-   
   );
 };
 
