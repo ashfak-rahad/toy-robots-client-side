@@ -102,7 +102,7 @@ const Header = () => {
       <ul
         className={
           nav
-            ? "fixed left-0 top-0 w-[60%] z-50 relative h-full border-r border-r-white bg-[#2d2f2d] ease-in-out duration-500"
+            ? "fixed left-0 top-0 w-[60%] z-50  h-full border-r border-r-white bg-[#2d2f2d] ease-in-out duration-500"
             : "ease-in-out duration-500 fixed left-[-100%]"
         }
       >
