@@ -21,7 +21,7 @@ const Header = () => {
           </span>
         </p>
       </div>
-      <ul className="hidden md:flex gap-8">
+      <ul className="hidden  md:flex gap-8">
         <li className="p-4">
           <NavLink
             to="/"
@@ -69,11 +69,11 @@ const Header = () => {
       <ul
         className={
           nav
-            ? "fixed left-0 top-0 w-[60%] h-full border-r border-r-white bg-[#2d2f2d] ease-in-out duration-500"
-            : "ease-in-out duration-500 fixed left-[-100%]"
+            ? "fixed left-0 top-0 w-[60%] z-50 h-full border-r border-r-white bg-[#2d2f2d] ease-in-out duration-500"
+            : "ease-in-out duration-500 z-50  fixed left-[-100%]"
         }
       >
-        <p className="flex title-font font-medium item-center md:justify-start justify-center text-gray-900">
+        <p className="flex title-font font-medium item-center md:justify-start justify-center text-white">
             <img className="w-9 mr-2" src={logo} alt="" />
             <span className="text-sm font-semibold text-white">
               Toy <br /> Robots

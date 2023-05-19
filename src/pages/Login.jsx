@@ -4,14 +4,12 @@ import { AiFillGoogleCircle } from "react-icons/ai";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "../provider/AuthProvider";
 
-
-
 const Login = () => {
-    const navigate = useNavigate();
-    const location = useLocation();
-    const from = location.state?.from?.pathname || "/";
-    const [user, setUser] = useState();
-    
+  const navigate = useNavigate();
+  const location = useLocation();
+  const from = location.state?.from?.pathname || "/";
+  const [user, setUser] = useState();
+
   const { signIn, signInWithGoogle } = useContext(AuthContext);
 
   const Login = (event) => {
@@ -20,8 +18,6 @@ const Login = () => {
     const email = form.email.value;
     const password = form.password.value;
     console.log(email, password);
-
-   
 
     signIn(email, password)
       .then((result) => {
@@ -68,9 +64,11 @@ const Login = () => {
               name="password"
               placeholder="password"
             />
-            <button className="bg-[#252728] text-white rounded-xl py-2">
-              Login
-            </button>
+            <input
+              type="submit"
+              value="Login"
+              className="bg-[#252728] text-white rounded-xl py-2"
+            />
           </form>
           <div className="mt-10 grid grid-cols-3 items-center text-gray-500">
             <hr className="border-gray-400" />
@@ -79,10 +77,7 @@ const Login = () => {
           </div>
           <div className="form-control mt-6">
             {user ? (
-              <button
-               
-                className="bg-white border py-2 w-full rounded-xl mt-5 flex justify-center items-center text-sm "
-              >
+              <button className="bg-white border py-2 w-full rounded-xl mt-5 flex justify-center items-center text-sm ">
                 {" "}
                 Sign Out
               </button>
