@@ -6,11 +6,13 @@ import Blog from "../pages/Blog";
 import AllToys from "../pages/AllToys";
 import AddToy from "../pages/AddToy";
 import Registration from "../pages/Registration";
+import PageError from "../pages/PageError";
 
 const Routes = createBrowserRouter([
     {
         path: "/",
         element: <RootLayout/>,
+        errorElement:<PageError/>,
         children: [
             {
                 path: "/",
