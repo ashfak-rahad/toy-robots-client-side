@@ -70,6 +70,7 @@ const Gallery = () => {
       </Swiper>
     </div>
       </div>
+      
    </div>
   );
 };
