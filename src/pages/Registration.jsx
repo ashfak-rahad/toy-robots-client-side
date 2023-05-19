@@ -27,7 +27,7 @@ const Registration = () => {
         setSuccess("Successfully login");
         updateProfile(auth.currentUser, {
           displayName: name,
-          photo: photo,
+          photo:photo,
         }).then(() => {
           navigate("/login");
         });
@@ -77,8 +77,8 @@ const Registration = () => {
               value="Registration"
               className="bg-[#252728] text-white rounded-xl py-2"
             />
-            <p className="text-red-600">{error}</p>
-            <p className="text-indigo-800">{success}</p>
+            <p className="text-red-400">{error}</p>
+            <p className="text-indigo-500">{success}</p>
             
           </form>
           <div className="mt-10 grid grid-cols-3 items-center text-gray-500">

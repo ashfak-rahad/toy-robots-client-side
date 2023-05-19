@@ -94,13 +94,7 @@ const Login = () => {
               </button>
             )}
           </div>
-          <button className="bg-white border py-2 w-full rounded-xl mt-5 flex justify-center items-center text-sm ">
-            {" "}
-            <span>
-              <AiFillGoogleCircle />
-            </span>{" "}
-            Login With Google
-          </button>
+          
           <p className="mt-5 text-xs border-b py-6">Forgot your password?</p>
           <div className=" mt-3 text-sm flex justify-between items-center">
             <p>It you don't have an account?</p>

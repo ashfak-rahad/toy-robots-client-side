@@ -11,7 +11,7 @@ import { EffectCoverflow, Pagination, Navigation } from 'swiper';
 const Gallery = () => {
   return (
     <div className="text-center font-bold text-5xl ">
-      <h1 className="py-8">Robot Gallery</h1>
+      <h1 className="py-8 text-black">Robot Gallery</h1>
       <div>
       <div className="container bg-neutral-800 py-6">
      

@@ -10,5 +10,5 @@ export default {
       'com': ['Comfortaa', 'cursive'],
     }},
   },
-  plugins: [],
+  plugins: [require("daisyui")],
 }

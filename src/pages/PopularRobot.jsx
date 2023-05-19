@@ -4,7 +4,7 @@ const PopularRobot = () => {
   return (
     <div>
         <div className="text-center font-bold text-5xl py-6">
-            <h1>Educational Robot</h1>
+            <h1 className="text-black">Educational Robot</h1>
         </div>
       <div class="flex min-h-screen items-center justify-center bg-neutral-800">
         <div class="grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-3">
