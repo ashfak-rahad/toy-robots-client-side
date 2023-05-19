@@ -1,11 +1,18 @@
-import React, { useContext } from "react";
+import React, { useContext, useState } from "react";
 import logo from "../asset/login.jpg";
 import { AiFillGoogleCircle } from "react-icons/ai";
-import { Link } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "../provider/AuthProvider";
 
+
+
 const Login = () => {
-  const { user,logOut, signIn, signInWithGoogle } = useContext(AuthContext);
+    const navigate = useNavigate();
+    const location = useLocation();
+    const from = location.state?.from?.pathname || "/";
+    const [user, setUser] = useState();
+    
+  const { signIn, signInWithGoogle } = useContext(AuthContext);
 
   const Login = (event) => {
     event.preventDefault();

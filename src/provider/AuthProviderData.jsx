@@ -7,14 +7,14 @@ const AuthProviderData = ({children}) => {
     // const getChefs = async () => {
     //     const res = await fetch()
     //     const data = await res.json()
-    //     setChefs(data)
+    //     setToys(data)
     // }
     useEffect(() => {
         setToys()
     },[])
 
     const apiDatas = {
-        toys,
+        toys
 
     }
     return (
