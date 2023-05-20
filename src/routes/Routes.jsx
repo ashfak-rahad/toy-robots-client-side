@@ -7,45 +7,55 @@ import AllToys from "../pages/AllToys";
 import AddToy from "../pages/AddToy";
 import Registration from "../pages/Registration";
 import PageError from "../pages/PageError";
-import AboutUs from "../components/AboutUs";
+import AddedToy from "../pages/AddedToy";
+import VeiwDetails from "../pages/VeiwDetails";
+
+
+
+
 
 const Routes = createBrowserRouter([
-    {
+  {
+    path: "/",
+    element: <RootLayout />,
+    errorElement: <PageError />,
+    children: [
+      {
         path: "/",
-        element: <RootLayout/>,
-        errorElement:<PageError/>,
-        children: [
-            {
-                path: "/",
-                element: <Home/>
-            },
-            {
-                path: "/blog",
-                element: <Blog/>
-            },
-            {
-                path: "/login",
-                element: <Login/>
-            },
-            {
-                path: "/alls",
-                element: <AllToys/>
-            },
-            {
-                path: "/add",
-                element: <AddToy/>
-            },
-            {
-                path: "/sign",
-                element: <Registration/>
-            },
-            {
-                path: "/about",
-                element: <AboutUs/>
-            }
-           
-        ]
-    }
-])
+        element: <Home />,
+      },
+      {
+        path: "/blog",
+        element: <Blog />,
+      },
+      {
+        path: "/login",
+        element: <Login />,
+      },
+      {
+        path: "/alls",
+        element: <AllToys />,
+      },
+      {
+        path: "/add",
+        element: <AddToy />,
+      },
+      {
+        path: "/sign",
+        element: <Registration />,
+      },
+      {
+        path: "/myToys",
+        element: <AddedToy/>,
+      },
+      {
+        path: "/alls/:id",
+        element:<VeiwDetails/>
+      }
+     
+      
+    ],
+  },
+]);
 
-export default Routes
+export default Routes;

@@ -7,7 +7,7 @@ const AllToys = () => {
   useEffect(() => {
     fetch("http://localhost:5000/robot")
       .then((res) => res.json())
-      .then((data) =>setToy(data));
+      .then((data) => setToy(data));
   }, []);
   return (
     <div className="p-4">
@@ -21,13 +21,25 @@ const AllToys = () => {
       <h1 className="text-black font-bold text-3xl text-center py-2">
         All Toys
       </h1>
-      <div>
-        {
-            toy.map(robot =><Table
-            key={robot._id}
-                robot={robot}
-            ></Table>)
-        }
+      
+      <div className="overflow-x-auto">
+      <table className="table table-compact w-full">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Seller</th>
+            <th>Sub-Category</th>
+            <th>Price</th>
+            <th>Quantity</th>
+            <th>Details</th>
+          </tr>
+        </thead>
+        <tbody>
+          {toy.map((robot) => (
+            <Table key={robot._id} robot={robot}></Table>
+          ))}
+        </tbody>
+      </table>
       </div>
     </div>
   );

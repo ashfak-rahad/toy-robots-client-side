@@ -5,8 +5,13 @@ import Gallery from "./Gallery";
 import PopularRobot from "./PopularRobot";
 import FighterRobot from "./FighterRobot";
 import Product from "./Product";
+import useTitle from "../hooks/useTitle";
+
+
+
 
 const Home = () => {
+  useTitle("Home");
   const slides = [
     {
       url: "https://images.pexels.com/photos/8294594/pexels-photo-8294594.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
@@ -81,10 +86,11 @@ const Home = () => {
       </div>
       <section>
         <Gallery></Gallery>
-        <Product/>
+        <Product />
         
-        <FighterRobot/>
-        <PopularRobot/>
+
+        <FighterRobot />
+        <PopularRobot />
       </section>
     </>
   );

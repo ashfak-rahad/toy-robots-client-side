@@ -1,40 +1,21 @@
-import React from 'react';
+import React from "react";
+import { Link } from "react-router-dom";
 
-const Table = ({robot}) => {
-    const {name,seller_name,seller_email,quantity,sub_category,price}=robot;
-    return (
-        <div>
-            <div className="overflow-x-auto">
-          <table className="table table-compact w-full">
-            <thead>
-              <tr>
-                
-                <th>Name</th>
-                <th>Seller</th>
-                <th>Sub-Category</th>
-                <th>Price</th>
-                <th>Quantity</th>
-                <th>Details</th>
-              </tr>
-              
-            </thead>
-            <tbody>
-              
-            <tr>
-                
-                <td>{name}</td>
-                <td>{seller_name}</td>
-                <td>{sub_category}</td>
-                <td>{price}</td>
-                <td>{quantity}</td>
-                <td><button>View Details</button></td>
-              </tr>
-            </tbody>
-            
-          </table>
-        </div>
-        </div>
-    );
+const Table = ({ robot }) => {
+  const { _id,name, seller_name, seller_email, quantity, sub_category, price } =
+    robot;
+  return (
+    <tr>
+      <td>{name}</td>
+      <td>{seller_name}</td>
+      <td>{sub_category}</td>
+      <td>{price}</td>
+      <td>{quantity}</td>
+      <td>
+        <button><Link to={`/alls/${_id}`}>Details</Link></button>
+      </td>
+    </tr>
+  );
 };
 
 export default Table;
