@@ -51,6 +51,7 @@ const Routes = createBrowserRouter([
       {
         path: "/alls/:id",
         element:<VeiwDetails/>
+        
       }
      
       

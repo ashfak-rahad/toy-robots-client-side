@@ -3,8 +3,10 @@ import logo from "../asset/login.jpg";
 import { AiFillGoogleCircle } from "react-icons/ai";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "../provider/AuthProvider";
+import useTitle from "../hooks/useTitle";
 
 const Login = () => {
+    useTitle("Login");
   const navigate = useNavigate();
   const location = useLocation();
   const from = location.state?.from?.pathname || "/";
