@@ -78,10 +78,10 @@ const Header = () => {
                   </div>
                 </label>
                 <button
-                  className="border rounded py-2 px-9  shadow-xl  bg-blue-800 text-white"
+                  className="border rounded py-2 px-2 shadow-xl space-x-3 bg-blue-800 text-white"
                   onClick={ handleGoogleSignOut}
                 >
-                  Sign Out
+                  Log Out
                 </button>
               </span>
             </>
@@ -96,7 +96,7 @@ const Header = () => {
             </>
           )}
       </div>
-      <div onClick={handleNav} className="block md:hidden">
+      <div onClick={handleNav} className="block md:hidden ">
         {nav ? <AiOutlineClose size={20} /> : <AiOutlineMenu size={20} />}
       </div>
       <ul
