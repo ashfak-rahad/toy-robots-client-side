@@ -1,5 +1,9 @@
 Sure! Here's a sample README file for a toy robot website:
+<<<<<<< HEAD
 # WebsiteLink:https://toy-robots.web.app
+=======
+WebsiteLink:https://toy-robots.web.app
+>>>>>>> 223e80007f5e2a6ea5bde6ae0b813ed9fd120e04
 
 # Toy Robot Website
 
@@ -55,3 +59,7 @@ Happy exploring and have a great time with your toy robots!
 Note: This is a sample README file. Feel free to modify it according to your specific project requirements and add more sections as needed.
 
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 223e80007f5e2a6ea5bde6ae0b813ed9fd120e04
