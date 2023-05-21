@@ -51,7 +51,7 @@ const AddToy = () => {
       <h1 className="text-center font-bold text-3xl text-black py-5">
         Add A Toy
       </h1>
-      <form onSubmit={handleAddToy}>
+      <form className="p-7" onSubmit={handleAddToy}>
         {/* form name and quantity row */}
         <div className="md:flex mb-8">
           <div className="form-control md:w-1/2">

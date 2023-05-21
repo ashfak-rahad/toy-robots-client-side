@@ -11,7 +11,8 @@ import PageError from "../pages/PageError";
 import VeiwDetails from "../pages/VeiwDetails";
 import MyToys from "../pages/MyToys";
 import Update from "../pages/Update";
-import PrivateRoute from ".routes/PrivateRoute";
+import RequireAuth from "./RequireAuth";
+
 
 const Routes = createBrowserRouter([
   {
@@ -49,7 +50,7 @@ const Routes = createBrowserRouter([
       },
       {
         path: "/toy/:id",
-        element:<PrivateRoute><VeiwDetails/></PrivateRoute>,
+        element:<RequireAuth><VeiwDetails/></RequireAuth>,
         loader: ({ params }) =>
           fetch(`https://toy-robots.vercel.app/robot/${params.id}`),
       },

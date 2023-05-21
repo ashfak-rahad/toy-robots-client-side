@@ -1,7 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import useTitle from '../hooks/useTitle';
 
 const PageError = () => {
+    useTitle("PageError");
     return (
         <div className="text-center  mx-16">
       <div id="error-page">
