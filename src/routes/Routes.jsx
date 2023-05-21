@@ -1,4 +1,4 @@
-import { createBrowserRouter } from "react-router-dom";
+import { createBrowserRouter, useLoaderData } from "react-router-dom";
 import RootLayout from "../layouts/RootLayout";
 import Home from "../pages/Home";
 import Login from "../pages/Login";
@@ -10,10 +10,7 @@ import PageError from "../pages/PageError";
 import AddedToy from "../pages/AddedToy";
 import VeiwDetails from "../pages/VeiwDetails";
 import MyToys from "../pages/MyToys";
-
-
-
-
+import Update from "../pages/Update";
 
 const Routes = createBrowserRouter([
   {
@@ -40,7 +37,6 @@ const Routes = createBrowserRouter([
       {
         path: "/add",
         element: <AddToy />,
-       
       },
       {
         path: "/sign",
@@ -48,15 +44,20 @@ const Routes = createBrowserRouter([
       },
       {
         path: "/myToys",
-        element: <MyToys/>,
+        element: <MyToys />,
       },
       {
         path: "/toy/:id",
-        element:<VeiwDetails/>
-
-      }
-     
-      
+        element: <VeiwDetails />,
+        loader: ({ params }) =>
+          fetch(`https://toy-robots.vercel.app/robot/${params.id}`),
+      },
+      {
+        path: "/update/:id",
+        element: <Update/>,
+        loader: ({ params }) =>
+          fetch(`https://toy-robots.vercel.app/robot/${params.id}`),
+      },
     ],
   },
 ]);
