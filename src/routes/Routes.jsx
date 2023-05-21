@@ -46,7 +46,7 @@ const Routes = createBrowserRouter([
       },
       {
         path: "/myToys",
-        element: <MyToys />,
+        element:<RequireAuth><MyToys /></RequireAuth> ,
       },
       {
         path: "/toy/:id",
