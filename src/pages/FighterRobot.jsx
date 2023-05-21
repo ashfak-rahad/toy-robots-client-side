@@ -14,7 +14,7 @@ const FighterRobot = () => {
             </h1>
           </div>
           <div className="flex flex-wrap -m-4">
-            <div className="p-4 sm:w-1/2 lg:w-1/3">
+            <div data-aos="fade-down-left" className="p-4 sm:w-1/2 lg:w-1/3">
               <div className="h-full border-2 border-gray-200 hover:scale-105 duration-700 border-opacity-60 rounded-lg overflow-hidden">
                 <img
                   className="lg:h-72 md:h-48 w-full object-cover object-center"
@@ -85,7 +85,7 @@ const FighterRobot = () => {
                 </div>
               </div>
             </div>
-            <div className="p-4 sm:w-1/2 lg:w-1/3">
+            <div data-aos="fade-down-left" className="p-4 sm:w-1/2 lg:w-1/3">
               <div className="h-full border-2 border-gray-200 hover:scale-105 duration-700 border-opacity-60 rounded-lg overflow-hidden">
                 <img
                   className="lg:h-72 md:h-48 w-full object-cover object-center"
@@ -156,7 +156,7 @@ const FighterRobot = () => {
                 </div>
               </div>
             </div>
-            <div className="p-4 sm:w-1/2 lg:w-1/3">
+            <div data-aos="fade-down-left" className="p-4 sm:w-1/2 lg:w-1/3">
               <div className="h-full border-2 border-gray-200 hover:scale-105 duration-700 border-opacity-60 rounded-lg overflow-hidden">
                 <img
                   className="lg:h-72 md:h-48 w-full object-cover object-center"
@@ -228,8 +228,8 @@ const FighterRobot = () => {
               </div>
             </div>
           </div>
-          <div className="flex flex-wrap -m-4">
-            <div className="p-4 sm:w-1/2 lg:w-1/3">
+          <div   className="flex flex-wrap -m-4">
+            <div data-aos="fade-down-right" className="p-4 sm:w-1/2 lg:w-1/3">
               <div className="h-full border-2 border-gray-200 hover:scale-105 duration-700 border-opacity-60 rounded-lg overflow-hidden">
                 <img
                   className="lg:h-72 md:h-48 w-full object-cover object-center"
@@ -300,7 +300,7 @@ const FighterRobot = () => {
                 </div>
               </div>
             </div>
-            <div className="p-4 sm:w-1/2 lg:w-1/3">
+            <div data-aos="fade-down-right" className="p-4 sm:w-1/2 lg:w-1/3">
               <div className="h-full border-2 border-gray-200 hover:scale-105 duration-700 border-opacity-60 rounded-lg overflow-hidden">
                 <img
                   className="lg:h-72 md:h-48 w-full object-cover object-center"
@@ -371,7 +371,7 @@ const FighterRobot = () => {
                 </div>
               </div>
             </div>
-            <div className="p-4 sm:w-1/2 lg:w-1/3">
+            <div data-aos="fade-down-right" className="p-4 sm:w-1/2 lg:w-1/3">
               <div className="h-full border-2 border-gray-200 hover:scale-105 duration-700 border-opacity-60 rounded-lg overflow-hidden">
                 <img
                   className="lg:h-72 md:h-48 w-full object-cover object-center"

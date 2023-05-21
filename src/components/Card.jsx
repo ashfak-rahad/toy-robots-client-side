@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const Card = ({ subCategory }) => {
   const {_id, name, image, price, rating } = subCategory;
   return (
-    <div className="border shadow-lg rounded-lg hover:scale-105 duration-300">
+    <div data-aos="zoom-in-right" className="border shadow-lg rounded-lg hover:scale-105 duration-300">
       <img
         className="w-full h-[200px] object-cover rounded-t-lg "
         src={image}

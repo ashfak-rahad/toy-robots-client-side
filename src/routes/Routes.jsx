@@ -7,10 +7,11 @@ import AllToys from "../pages/AllToys";
 import AddToy from "../pages/AddToy";
 import Registration from "../pages/Registration";
 import PageError from "../pages/PageError";
-import AddedToy from "../pages/AddedToy";
+
 import VeiwDetails from "../pages/VeiwDetails";
 import MyToys from "../pages/MyToys";
 import Update from "../pages/Update";
+import PrivateRoute from ".routes/PrivateRoute";
 
 const Routes = createBrowserRouter([
   {
@@ -48,13 +49,13 @@ const Routes = createBrowserRouter([
       },
       {
         path: "/toy/:id",
-        element: <VeiwDetails />,
+        element:<PrivateRoute><VeiwDetails/></PrivateRoute>,
         loader: ({ params }) =>
           fetch(`https://toy-robots.vercel.app/robot/${params.id}`),
       },
       {
         path: "/update/:id",
-        element: <Update/>,
+        element: <Update />,
         loader: ({ params }) =>
           fetch(`https://toy-robots.vercel.app/robot/${params.id}`),
       },
