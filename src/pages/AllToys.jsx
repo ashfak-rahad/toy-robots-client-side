@@ -7,7 +7,7 @@ const AllToys = () => {
   const [toy, setToy] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:5000/robot")
+    fetch("https://toy-robots.vercel.app/robot")
       .then((res) => res.json())
       .then((data) => setToy(data));
   }, []);

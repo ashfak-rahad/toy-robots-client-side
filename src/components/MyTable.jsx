@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-const Table = ({ robot }) => {
+const MyTable = ({ robot }) => {
   const { _id,name, seller_name, seller_email, quantity, sub_category, price } =
     robot;
   return (
@@ -12,10 +12,13 @@ const Table = ({ robot }) => {
       <td>{price}</td>
       <td>{quantity}</td>
       <td>
-        <button><Link to={`/toy/${_id}`}>Details</Link></button>
+        <button><Link to={`/update/${_id}`}>edit</Link></button>
+      </td>
+      <td>
+        <button>Delete</button>
       </td>
     </tr>
   );
 };
 
-export default Table;
+export default MyTable;

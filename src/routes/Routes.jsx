@@ -9,6 +9,7 @@ import Registration from "../pages/Registration";
 import PageError from "../pages/PageError";
 import AddedToy from "../pages/AddedToy";
 import VeiwDetails from "../pages/VeiwDetails";
+import MyToys from "../pages/MyToys";
 
 
 
@@ -39,6 +40,7 @@ const Routes = createBrowserRouter([
       {
         path: "/add",
         element: <AddToy />,
+       
       },
       {
         path: "/sign",
@@ -46,12 +48,12 @@ const Routes = createBrowserRouter([
       },
       {
         path: "/myToys",
-        element: <AddedToy/>,
+        element: <MyToys/>,
       },
       {
-        path: "/alls/:id",
+        path: "/toy/:id",
         element:<VeiwDetails/>
-        
+
       }
      
       

@@ -100,12 +100,6 @@ const Header = () => {
               Blog
             </NavLink>
           </li>
-          <li>
-            <NavLink
-              to="/"
-              className={({ isActive }) => (isActive ? "active" : "")}
-            />
-          </li>
         </ul>
         {/* responsive  */}
         <ul
@@ -119,6 +113,54 @@ const Header = () => {
               className={({ isActive }) => (isActive ? "active" : "")}
             >
               Home
+            </NavLink>
+          </li>
+          <li className="p-4">
+            <NavLink
+              to="/alls"
+              className={({ isActive }) => (isActive ? "active" : "")}
+            >
+              AllToy
+            </NavLink>
+          </li>
+          {user ? (
+            <>
+              <li className="p-4">
+                <NavLink
+                  onClick={() => setToggle(false)}
+                  className={({ isActive }) => (isActive ? "active" : "")}
+                  to="/myToys"
+                >
+                  My Toys
+                </NavLink>
+              </li>
+              <li className="p-4">
+                <NavLink
+                  onClick={() => setToggle(false)}
+                  className={({ isActive }) => (isActive ? "active" : "")}
+                  to="/add"
+                >
+                  Add Toys
+                </NavLink>
+              </li>
+            </>
+          ) : (
+            ""
+          )}
+          <li className="p-4">
+            <NavLink
+              to="/blog"
+              className={({ isActive }) => (isActive ? "active" : "")}
+            >
+              Blog
+            </NavLink>
+          </li>
+          <li className="p-4">
+            <NavLink
+              to="/login"
+              className={({ isActive }) => (isActive ? "active" : "")}
+            >
+              Login
             </NavLink>
           </li>
         </ul>
